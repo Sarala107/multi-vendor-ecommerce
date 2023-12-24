@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <!-- zoom -->
+    <script src="./js/jquery.zoom.min.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <div id="fontUrlHere"></div>
+    <title>Document</title>
+  </head>
+
+  <div
+    id="syncColor"
+    main-color="#6f42c3"
+    pri-color="#b30e8c"
+    sec-color="#0571b9"
+    font-family="Roboto"
+    font-url="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  ></div>
+  <body>
+    <div class="loading">
+      <div
+        class="img"
+        style="background-image: url(./images/shopping-loader.gif)"
+      ></div>
+    </div>
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Upload Logo</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="">Select</label>
+
+              <div class="select">
+                <select>
+                  <option value="">-----</option>
+                  <option value="">Ractangle [250 X 200]</option>
+                  <option value="">Square [200 X 200]</option>
+                  <option value="">Circle [200 X 200]</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="group">
+              <label for="bannerImage">Banner Image</label>
+              <input type="file" id="bannerImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Banner</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <div class="desktop-nav sticky-nav">
+      <div class="v-header">
+        <div class="wrapper">
+          <div></div>
+
+          <div class="logo rectangle-shape">
+            <div class="image">
+              <div
+                class="logo-image"
+                style="background-image: url(./images/vendor-logo-header.png)"
+              ></div>
+            </div>
+
+            <button class="edit-logo" id="addItem">
+              <img src="./images/icon/Camera.svg" alt="" />
+            </button>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">
+                <button>Home</button>
+              </a>
+            </li>
+
+            <li class="drop-down">
+              <button>Shop <i class="fas fa-chevron-down"></i></button>
+              <ul class="drop">
+                <li>
+                  <a href="#">
+                    <button>Clothing</button>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <button>Electronic</button>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <button>Sneakers</button>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">
+                <button>About</button>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <button>Blog</button>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <button>Contact</button>
+              </a>
+            </li>
+          </ul>
+
+          <div class="others">
+            <div class="v-search-section" id="v-search-field">
+              <div class="inner">
+                <button class="v-search-btn">
+                  <div class="icon-group">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </button>
+
+                <form action="">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    id="v-search-input"
+                  />
+                  <button>
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="cart">
+              <img
+                class="bag-image"
+                src="./images/icon/shopping-bag-light.svg"
+                alt="bag"
+              />
+              <div class="count">49</div>
+              <div class="shopping-cart-dropdown">
+                <div class="list">
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/bluetooth-headphone.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>HeadSet</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img src="./images/electronic/device/tv.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h4>UHD 4K TV</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/product-app-2_f3820da1-3014-42d6-bf64-e9b8b5cfd508_360x.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/A13I0399__58224.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/DRE27_01__10625.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="checkout.html">
+                  <button>Check Out</button>
+                </a>
+              </div>
+            </div>
+
+            <a href="sign-in.html">
+              <div class="login-signup">
+                <div class="icon">
+                  <img src="./images/icon/Profile-light.svg" alt="profile" />
+                </div>
+
+                <div class="sign-in-sign-up-dropdown">
+                  <ul>
+                    <a href="#">
+                      <li><i class="fas fa-user"></i> Profile</li>
+                    </a>
+
+                    <a href="#">
+                      <li><i class="fas fa-cog"></i> Setting</li>
+                    </a>
+
+                    <a href="wishlist.html">
+                      <li><i class="fas fa-heart"></i> Wishlist</li>
+                    </a>
+
+                    <a href="#">
+                      <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+                    </a>
+                  </ul>
+
+                  <!-- <ul>
+                    <a href="sign-up.html">
+                      <li>SignUp <i class="fas fa-user"></i></li>
+                    </a>
+                    <a href="sign-in.html">
+                      <li>Login <i class="fas fa-cog"></i></li>
+                    </a>
+                  </ul> -->
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-logo">
+      <div class="logo">
+        <h2>LOGO</h2>
+      </div>
+    </div>
+
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Banner Form</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="bannerName">Banner Name</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerLink">Banner Link</label>
+              <input type="text" id="bannerLink" />
+            </div>
+
+            <div class="group">
+              <label for="">Select</label>
+
+              <div class="select">
+                <select class="js-example-responsive" style="width: 100%">
+                  <option value="">-----</option>
+                  <option value="">Hello</option>
+                  <option value="">Hello</option>
+                  <option value="">Hello</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="group">
+              <label for="bannerImage">Banner Image</label>
+              <input type="file" id="bannerImage" />
+            </div>
+
+            <div class="group">
+              <label for="bannerDesc">Banner Name</label>
+              <textarea name="" id="bannerDesc" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Banner</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Banner Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="bannerName">Banner Name</label>
+              <input type="text" id="bannerName" value="Hello World" />
+            </div>
+
+            <p class="error-message-text success">invalid NAme</p>
+
+            <div class="group">
+              <label for="bannerLink">Banner Link</label>
+              <input type="text" id="bannerLink" value="njaksndcjkans" />
+            </div>
+
+            <div class="group">
+              <label for="bannerImage">Banner Image</label>
+              <input type="file" id="bannerImage" />
+            </div>
+
+            <div class="image">
+              <img src="./images/banner/banner1.jpg" alt="" />
+            </div>
+
+            <div class="group">
+              <label for="bannerDesc">Banner Descriptions</label>
+              <textarea
+                name=""
+                id="bannerDesc"
+                cols="30"
+                rows="10"
+                value="Lorem"
+              ></textarea>
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Banner</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- banner-start -->
+    <div class="banner others-page-banner">
+      <div class="add-item" id="addItem">
+        <button class="icon">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.5 0C2.334 0 2.17 0.016 2.013 0.048L2.207 1.028C2.30352 1.00915 2.40165 0.99977 2.5 1H2.958V0H2.5ZM4.792 0H3.875V1H4.792V0ZM6.625 0H5.708V1H6.625V0ZM8.458 0H7.542V1H8.458V0ZM10.292 0H9.375V1H10.292V0ZM12.125 0H11.208V1H12.125V0ZM13.5 0H13.042V1H13.5C13.6 1 13.699 1.01 13.793 1.029L13.987 0.048C13.8266 0.0161758 13.6635 9.94507e-05 13.5 0V0ZM15.579 1.11C15.3962 0.837453 15.1618 0.603373 14.889 0.421L14.333 1.252C14.497 1.362 14.638 1.503 14.748 1.667L15.578 1.111L15.579 1.11ZM1.11 0.421C0.837453 0.603769 0.603373 0.838188 0.421 1.111L1.252 1.667C1.362 1.503 1.503 1.362 1.667 1.252L1.11 0.422V0.421ZM16 2.5C16 2.334 15.984 2.17 15.952 2.013L14.972 2.207C14.99 2.301 15 2.399 15 2.5V2.958H16V2.5ZM0.048 2.013C0.0161758 2.17338 9.94507e-05 2.33649 0 2.5L0 2.958H1V2.5C1 2.4 1.01 2.301 1.029 2.207L0.048 2.013V2.013ZM0 3.875V4.792H1V3.875H0ZM16 4.792V3.875H15V4.792H16ZM0 5.708V6.625H1V5.708H0ZM16 6.625V5.708H15V6.625H16ZM0 7.542V8.458H1V7.542H0ZM15 8.458H16V7.542H15V8.458ZM0 9.375V10.292H1V9.375H0ZM16 10.292V9.375H15V10.292H16ZM0 11.208V12.125H1V11.208H0ZM16 12.125V11.208H15V12.125H16ZM0 13.042V13.5C0 13.666 0.016 13.83 0.048 13.987L1.028 13.793C1.00915 13.6965 0.99977 13.5983 1 13.5V13.042H0ZM16 13.5V13.042H15V13.5C15 13.6 14.99 13.699 14.971 13.793L15.952 13.987C15.984 13.829 16 13.667 16 13.5ZM0.421 14.89C0.604 15.162 0.838 15.396 1.111 15.579L1.667 14.748C1.50286 14.6381 1.36186 14.4971 1.252 14.333L0.422 14.889L0.421 14.89ZM14.89 15.579C15.162 15.396 15.396 15.162 15.579 14.889L14.748 14.333C14.638 14.497 14.497 14.638 14.333 14.748L14.889 15.578L14.89 15.579ZM2.013 15.952C2.171 15.984 2.333 16 2.5 16H2.958V15H2.5C2.4 15 2.301 14.99 2.207 14.971L2.013 15.952V15.952ZM13.5 16C13.666 16 13.83 15.984 13.987 15.952L13.793 14.972C13.6965 14.9909 13.5983 15.0002 13.5 15H13.042V16H13.5ZM3.875 16H4.792V15H3.875V16ZM5.708 16H6.625V15H5.708V16ZM7.542 15V16H8.458V15H7.542ZM9.375 16H10.292V15H9.375V16ZM11.208 16H12.125V15H11.208V16ZM8.5 4.5C8.5 4.36739 8.44732 4.24021 8.35355 4.14645C8.25979 4.05268 8.13261 4 8 4C7.86739 4 7.74021 4.05268 7.64645 4.14645C7.55268 4.24021 7.5 4.36739 7.5 4.5V7.5H4.5C4.36739 7.5 4.24021 7.55268 4.14645 7.64645C4.05268 7.74021 4 7.86739 4 8C4 8.13261 4.05268 8.25979 4.14645 8.35355C4.24021 8.44732 4.36739 8.5 4.5 8.5H7.5V11.5C7.5 11.6326 7.55268 11.7598 7.64645 11.8536C7.74021 11.9473 7.86739 12 8 12C8.13261 12 8.25979 11.9473 8.35355 11.8536C8.44732 11.7598 8.5 11.6326 8.5 11.5V8.5H11.5C11.6326 8.5 11.7598 8.44732 11.8536 8.35355C11.9473 8.25979 12 8.13261 12 8C12 7.86739 11.9473 7.74021 11.8536 7.64645C11.7598 7.55268 11.6326 7.5 11.5 7.5H8.5V4.5Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/bags/banner.jpg)"
+          >
+            <div class="edit-btn">
+              <i class="fas fa-edit"></i>
+            </div>
+
+            <div class="delete-btn">
+              <i class="fas fa-trash"></i>
+            </div>
+
+            <div class="wrapper">
+              <h1>
+                Huge Saving on <br />
+                UHD Televisions
+              </h1>
+
+              <p>Sale up to 70% off on selected items*</p>
+              <a href="#">
+                <button class="button">Shop Now</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="background-image: url(./images/bags/banner4.jpg)"
+          >
+            <div class="wrapper">
+              <h1>
+                New Arrivals <br />
+                Denim Jackets
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum sus-pendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis
+              </p>
+              <a href="#">
+                <button class="button">Shop Now</button>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide content-left"
+            style="background-image: url(./images/bags/banner7.jpg)"
+          >
+            <div class="wrapper">
+              <h1>
+                New Arrivals <br />
+                Denim Jackets
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum sus-pendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis
+              </p>
+              <a href="#">
+                <button class="button">Shop Now</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner-end -->
+
+    <!-- serv-start -->
+    <div class="serv">
+      <div class="wrapper">
+        <div class="item">
+          <div class="icon">
+            <img src="./images/icon/fast.svg" alt="truck" />
+          </div>
+          Free shipping & Returns
+        </div>
+
+        <div class="line"></div>
+
+        <div class="item">
+          <div class="icon">
+            <img src="./images/icon/medal.svg" alt="medal" />
+          </div>
+          Lowest Price Gwarantee
+        </div>
+
+        <div class="line"></div>
+
+        <div class="item">
+          <div class="icon">
+            <img src="./images/icon/trophy.svg" alt="trophy" />
+          </div>
+          Longest Warranties Offer
+        </div>
+      </div>
+    </div>
+    <!-- serv-end -->
+
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Collection Name</label>
+              <input type="text" id="collectionName" />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Collection Image</label>
+              <input type="file" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Collection Name</label>
+              <input
+                type="text"
+                id="collectionName"
+                value="Spring Collection"
+              />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Collection Image</label>
+              <input type="file" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Collection Name</label>
+              <input
+                type="text"
+                id="collectionName"
+                value="Spring Collection"
+              />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Collection Image</label>
+              <input type="file" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Collection Name</label>
+              <input
+                type="text"
+                id="collectionName"
+                value="Spring Collection"
+              />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Collection Image</label>
+              <input type="file" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Collection Name</label>
+              <input
+                type="text"
+                id="collectionName"
+                value="Spring Collection"
+              />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Collection Image</label>
+              <input type="file" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Collection Name</label>
+              <input
+                type="text"
+                id="collectionName"
+                value="Spring Collection"
+              />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Collection Image</label>
+              <input type="file" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- bags-collections-start -->
+    <section>
+      <div class="wrapper">
+        <div class="add-item add-item-collection" id="addItem">
+          <button class="icon">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.5 0C2.334 0 2.17 0.016 2.013 0.048L2.207 1.028C2.30352 1.00915 2.40165 0.99977 2.5 1H2.958V0H2.5ZM4.792 0H3.875V1H4.792V0ZM6.625 0H5.708V1H6.625V0ZM8.458 0H7.542V1H8.458V0ZM10.292 0H9.375V1H10.292V0ZM12.125 0H11.208V1H12.125V0ZM13.5 0H13.042V1H13.5C13.6 1 13.699 1.01 13.793 1.029L13.987 0.048C13.8266 0.0161758 13.6635 9.94507e-05 13.5 0V0ZM15.579 1.11C15.3962 0.837453 15.1618 0.603373 14.889 0.421L14.333 1.252C14.497 1.362 14.638 1.503 14.748 1.667L15.578 1.111L15.579 1.11ZM1.11 0.421C0.837453 0.603769 0.603373 0.838188 0.421 1.111L1.252 1.667C1.362 1.503 1.503 1.362 1.667 1.252L1.11 0.422V0.421ZM16 2.5C16 2.334 15.984 2.17 15.952 2.013L14.972 2.207C14.99 2.301 15 2.399 15 2.5V2.958H16V2.5ZM0.048 2.013C0.0161758 2.17338 9.94507e-05 2.33649 0 2.5L0 2.958H1V2.5C1 2.4 1.01 2.301 1.029 2.207L0.048 2.013V2.013ZM0 3.875V4.792H1V3.875H0ZM16 4.792V3.875H15V4.792H16ZM0 5.708V6.625H1V5.708H0ZM16 6.625V5.708H15V6.625H16ZM0 7.542V8.458H1V7.542H0ZM15 8.458H16V7.542H15V8.458ZM0 9.375V10.292H1V9.375H0ZM16 10.292V9.375H15V10.292H16ZM0 11.208V12.125H1V11.208H0ZM16 12.125V11.208H15V12.125H16ZM0 13.042V13.5C0 13.666 0.016 13.83 0.048 13.987L1.028 13.793C1.00915 13.6965 0.99977 13.5983 1 13.5V13.042H0ZM16 13.5V13.042H15V13.5C15 13.6 14.99 13.699 14.971 13.793L15.952 13.987C15.984 13.829 16 13.667 16 13.5ZM0.421 14.89C0.604 15.162 0.838 15.396 1.111 15.579L1.667 14.748C1.50286 14.6381 1.36186 14.4971 1.252 14.333L0.422 14.889L0.421 14.89ZM14.89 15.579C15.162 15.396 15.396 15.162 15.579 14.889L14.748 14.333C14.638 14.497 14.497 14.638 14.333 14.748L14.889 15.578L14.89 15.579ZM2.013 15.952C2.171 15.984 2.333 16 2.5 16H2.958V15H2.5C2.4 15 2.301 14.99 2.207 14.971L2.013 15.952V15.952ZM13.5 16C13.666 16 13.83 15.984 13.987 15.952L13.793 14.972C13.6965 14.9909 13.5983 15.0002 13.5 15H13.042V16H13.5ZM3.875 16H4.792V15H3.875V16ZM5.708 16H6.625V15H5.708V16ZM7.542 15V16H8.458V15H7.542ZM9.375 16H10.292V15H9.375V16ZM11.208 16H12.125V15H11.208V16ZM8.5 4.5C8.5 4.36739 8.44732 4.24021 8.35355 4.14645C8.25979 4.05268 8.13261 4 8 4C7.86739 4 7.74021 4.05268 7.64645 4.14645C7.55268 4.24021 7.5 4.36739 7.5 4.5V7.5H4.5C4.36739 7.5 4.24021 7.55268 4.14645 7.64645C4.05268 7.74021 4 7.86739 4 8C4 8.13261 4.05268 8.25979 4.14645 8.35355C4.24021 8.44732 4.36739 8.5 4.5 8.5H7.5V11.5C7.5 11.6326 7.55268 11.7598 7.64645 11.8536C7.74021 11.9473 7.86739 12 8 12C8.13261 12 8.25979 11.9473 8.35355 11.8536C8.44732 11.7598 8.5 11.6326 8.5 11.5V8.5H11.5C11.6326 8.5 11.7598 8.44732 11.8536 8.35355C11.9473 8.25979 12 8.13261 12 8C12 7.86739 11.9473 7.74021 11.8536 7.64645C11.7598 7.55268 11.6326 7.5 11.5 7.5H8.5V4.5Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <div class="others-details">
+            <h3>Add your collection</h3>
+          </div>
+        </div>
+
+        <div class="bags-collections">
+          <div class="list">
+            <div class="item">
+              <!-- edit delete sec -->
+              <div class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </div>
+
+              <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </div>
+              <!-- edit delete sec -->
+
+              <a href="#">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/bags/h1-cat-01.jpg)"
+                  ></div>
+                </div>
+
+                <div class="details">
+                  <div class="num">01</div>
+                  <div class="name">Laptop Case</div>
+                </div>
+              </a>
+
+              <div class="rank rank-top">Rank: 1</div>
+            </div>
+
+            <div class="item">
+              <!-- edit delete sec -->
+              <div class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </div>
+
+              <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </div>
+              <!-- edit delete sec -->
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/h1-cat-02.jpg)"
+                ></div>
+              </div>
+
+              <div class="details">
+                <div class="num">02</div>
+                <div class="name">Laptop Case</div>
+              </div>
+
+              <div class="rank rank-top">Rank: 2</div>
+            </div>
+
+            <div class="item">
+              <!-- edit delete sec -->
+              <div class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </div>
+
+              <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </div>
+              <!-- edit delete sec -->
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/h1-cat-03.jpg)"
+                ></div>
+              </div>
+
+              <div class="details">
+                <div class="num">03</div>
+                <div class="name">Laptop Case</div>
+              </div>
+
+              <div class="rank rank-top">Rank: 3</div>
+            </div>
+
+            <div class="item">
+              <!-- edit delete sec -->
+              <div class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </div>
+
+              <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </div>
+              <!-- edit delete sec -->
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/h1-cat-04.jpg)"
+                ></div>
+              </div>
+
+              <div class="details">
+                <div class="num">04</div>
+                <div class="name">Laptop Case</div>
+              </div>
+
+              <div class="rank rank-top">Rank: 4</div>
+            </div>
+
+            <div class="item">
+              <!-- edit delete sec -->
+              <div class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </div>
+
+              <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </div>
+              <!-- edit delete sec -->
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/h1-cat-05.jpg)"
+                ></div>
+              </div>
+
+              <div class="details">
+                <div class="num">05</div>
+                <div class="name">Laptop Case</div>
+              </div>
+
+              <div class="rank rank-top">Rank: 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bags-collections-end -->
+
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Product Form</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="productName">Product Name</label>
+              <input type="text" id="productName" />
+            </div>
+
+            <div class="group">
+              <label for="productImage">Product Image</label>
+              <input type="file" id="productImage" />
+            </div>
+
+            <div class="group">
+              <label for="productImage">Product Image</label>
+              <input type="file" id="productImage" />
+            </div>
+
+            <div class="group">
+              <label for="productImage">Product Image</label>
+              <input type="file" id="productImage" />
+            </div>
+
+            <div class="group">
+              <label for="productPrice">Price</label>
+              <input type="number" id="productPrice" />
+            </div>
+
+            <div class="groups">
+              <h3>Size</h3>
+              <ul class="size-form">
+                <li>
+                  <label for="xxxs">
+                    <input type="checkbox" id="xxxs" class="checkbox" />
+
+                    <span>XXXS</span>
+                  </label>
+
+                  <div class="line"></div>
+
+                  <label>
+                    <span>Quantity:</span>
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="quantityInput"
+                    />
+                  </label>
+                </li>
+
+                <li>
+                  <label for="xxxs">
+                    <input type="checkbox" id="xxxs" class="checkbox" />
+
+                    <span>XXXS</span>
+                  </label>
+
+                  <div class="line"></div>
+
+                  <label>
+                    <span>Quantity:</span>
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="quantityInput"
+                    />
+                  </label>
+                </li>
+
+                <li>
+                  <label for="xxxs">
+                    <input type="checkbox" id="xxxs" class="checkbox" />
+
+                    <span>XXXS</span>
+                  </label>
+
+                  <div class="line"></div>
+
+                  <label>
+                    <span>Quantity:</span>
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="quantityInput"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="group">
+              <label for="discountPrice">Discount Price</label>
+              <input type="number" id="productPrice" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Product</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Banner Form</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="productName">Product Name</label>
+              <input
+                type="text"
+                id="productName"
+                value="Bluetooth Head Phone"
+              />
+            </div>
+
+            <div class="group">
+              <label for="productImage">Product Image</label>
+              <input type="file" id="productImage" />
+            </div>
+
+            <div class="group">
+              <label for="productPrice">Price</label>
+              <input type="number" id="productPrice" value="1200" />
+            </div>
+
+            <div class="group">
+              <label for="discountPrice">Discount Price</label>
+              <input type="number" id="productPrice" value="2000" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Product</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- bags-new-product-start -->
+    <section>
+      <div class="wrapper">
+        <div class="bags-new-product">
+          <div class="sec-title">
+            <h1>New Trending Products</h1>
+            <p>
+              Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque
+              libero
+            </p>
+          </div>
+
+          <ul>
+            <li class="active" data-filters="dataNew">New <span></span></li>
+            <li data-filters="dataSale">Sale <span></span></li>
+            <li data-filters="dataHot">Hot <span></span></li>
+          </ul>
+
+          <div class="list">
+            <div class="item">
+              <div class="add-item" id="addItem">
+                <button class="icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0C2.334 0 2.17 0.016 2.013 0.048L2.207 1.028C2.30352 1.00915 2.40165 0.99977 2.5 1H2.958V0H2.5ZM4.792 0H3.875V1H4.792V0ZM6.625 0H5.708V1H6.625V0ZM8.458 0H7.542V1H8.458V0ZM10.292 0H9.375V1H10.292V0ZM12.125 0H11.208V1H12.125V0ZM13.5 0H13.042V1H13.5C13.6 1 13.699 1.01 13.793 1.029L13.987 0.048C13.8266 0.0161758 13.6635 9.94507e-05 13.5 0V0ZM15.579 1.11C15.3962 0.837453 15.1618 0.603373 14.889 0.421L14.333 1.252C14.497 1.362 14.638 1.503 14.748 1.667L15.578 1.111L15.579 1.11ZM1.11 0.421C0.837453 0.603769 0.603373 0.838188 0.421 1.111L1.252 1.667C1.362 1.503 1.503 1.362 1.667 1.252L1.11 0.422V0.421ZM16 2.5C16 2.334 15.984 2.17 15.952 2.013L14.972 2.207C14.99 2.301 15 2.399 15 2.5V2.958H16V2.5ZM0.048 2.013C0.0161758 2.17338 9.94507e-05 2.33649 0 2.5L0 2.958H1V2.5C1 2.4 1.01 2.301 1.029 2.207L0.048 2.013V2.013ZM0 3.875V4.792H1V3.875H0ZM16 4.792V3.875H15V4.792H16ZM0 5.708V6.625H1V5.708H0ZM16 6.625V5.708H15V6.625H16ZM0 7.542V8.458H1V7.542H0ZM15 8.458H16V7.542H15V8.458ZM0 9.375V10.292H1V9.375H0ZM16 10.292V9.375H15V10.292H16ZM0 11.208V12.125H1V11.208H0ZM16 12.125V11.208H15V12.125H16ZM0 13.042V13.5C0 13.666 0.016 13.83 0.048 13.987L1.028 13.793C1.00915 13.6965 0.99977 13.5983 1 13.5V13.042H0ZM16 13.5V13.042H15V13.5C15 13.6 14.99 13.699 14.971 13.793L15.952 13.987C15.984 13.829 16 13.667 16 13.5ZM0.421 14.89C0.604 15.162 0.838 15.396 1.111 15.579L1.667 14.748C1.50286 14.6381 1.36186 14.4971 1.252 14.333L0.422 14.889L0.421 14.89ZM14.89 15.579C15.162 15.396 15.396 15.162 15.579 14.889L14.748 14.333C14.638 14.497 14.497 14.638 14.333 14.748L14.889 15.578L14.89 15.579ZM2.013 15.952C2.171 15.984 2.333 16 2.5 16H2.958V15H2.5C2.4 15 2.301 14.99 2.207 14.971L2.013 15.952V15.952ZM13.5 16C13.666 16 13.83 15.984 13.987 15.952L13.793 14.972C13.6965 14.9909 13.5983 15.0002 13.5 15H13.042V16H13.5ZM3.875 16H4.792V15H3.875V16ZM5.708 16H6.625V15H5.708V16ZM7.542 15V16H8.458V15H7.542ZM9.375 16H10.292V15H9.375V16ZM11.208 16H12.125V15H11.208V16ZM8.5 4.5C8.5 4.36739 8.44732 4.24021 8.35355 4.14645C8.25979 4.05268 8.13261 4 8 4C7.86739 4 7.74021 4.05268 7.64645 4.14645C7.55268 4.24021 7.5 4.36739 7.5 4.5V7.5H4.5C4.36739 7.5 4.24021 7.55268 4.14645 7.64645C4.05268 7.74021 4 7.86739 4 8C4 8.13261 4.05268 8.25979 4.14645 8.35355C4.24021 8.44732 4.36739 8.5 4.5 8.5H7.5V11.5C7.5 11.6326 7.55268 11.7598 7.64645 11.8536C7.74021 11.9473 7.86739 12 8 12C8.13261 12 8.25979 11.9473 8.35355 11.8536C8.44732 11.7598 8.5 11.6326 8.5 11.5V8.5H11.5C11.6326 8.5 11.7598 8.44732 11.8536 8.35355C11.9473 8.25979 12 8.13261 12 8C12 7.86739 11.9473 7.74021 11.8536 7.64645C11.7598 7.55268 11.6326 7.5 11.5 7.5H8.5V4.5Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+                <div class="others-details">
+                  <h3>Add your banner</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataNew">
+              <!-- edit delete sec -->
+              <div class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </div>
+
+              <div class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </div>
+              <!-- edit delete sec -->
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/01_front-270x270.jpeg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataNew">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/05-270x270.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/07-270x270.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataNew">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/10-270x270.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/30-home_default.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataNew">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/55-home_default.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/60-home_default.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataHot">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/db_01_3-270x270.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataHot">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/product-16.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataHot">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/product-details-img2.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataHot">
+              <div class="image">
+                <div
+                  class="img"
+                  style="
+                    background-image: url(./images/bags/product/product-details-img4.jpg);
+                  "
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/product/bag1.jpg)"
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataHot">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/product/bag2.jpg)"
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/product/bag3.jpg)"
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/product/bag4.jpg)"
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item box-item dataSale">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/bags/product/bag5.jpg)"
+                ></div>
+                <div class="quick-view">
+                  <i class="fas fa-search"></i>
+                </div>
+
+                <div class="add-to-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="wishlist">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+
+              <div class="details">
+                <a href="#">
+                  <div class="name">
+                    Black Silicone Utensils with Acacia Handle
+                  </div>
+                </a>
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+                </div>
+                <div class="price">
+                  <div class="new">$424.00</div>
+                  <div class="old">$500.00 <del></del></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bags-new-product-end -->
+
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Fashion Form Add</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="bannerName">Banner Name</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerName">Banner Link</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerImage">Banner Image</label>
+              <input type="file" id="bannerImage" />
+            </div>
+
+            <div class="group">
+              <label for="bannerDesc">Banner Name</label>
+              <textarea name="" id="bannerDesc" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Banner</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Fashion Form Edit</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="bannerName">Banner Name</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerName">Banner Link</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerImage">Banner Image</label>
+              <input type="file" id="bannerImage" />
+            </div>
+
+            <div class="group">
+              <label for="bannerDesc">Banner Name</label>
+              <textarea name="" id="bannerDesc" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Banner</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <!-- sale-off-start -->
+    <section class="mTop">
+      <div
+        class="sale-off dark-bg"
+        style="background-image: url(./images/bags/parallex.jpg)"
+      >
+        <!-- edit delete sec -->
+        <div class="edit-btn">
+          <i class="fas fa-edit"></i>
+        </div>
+
+        <div class="delete-btn">
+          <i class="fas fa-trash"></i>
+        </div>
+        <!-- edit delete sec -->
+
+        <div class="details">
+          <h6>The Season Begaings</h6>
+          <h3>Promotion <span>Sale Off 50%</span></h3>
+          <h1>Hurry</h1>
+          <a href="#">
+            <button>Shop Now</button>
+          </a>
+          <h2>Before Offer Ends</h2>
+        </div>
+      </div>
+    </section>
+    <!-- sale-off-end -->
+
+    <!-- footer-start -->
+    <section class="bg">
+      <div class="wrapper">
+        <footer>
+          <div class="subscribe">
+            <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <h5>Get the latest updates on new products and upcoming sales</h5>
+            <form action="">
+              <div class="group">
+                <input
+                  type="email"
+                  placeholder="enter your email address"
+                  required
+                />
+                <button class="send-btn">
+                  <img src="./images/icon/Send.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="list">
+            <div class="footer-contact">
+              <div class="logo">
+                <img src="./images/vendor-logo.png" alt="logo" />
+              </div>
+              <h4>
+                <i class="fas fa-map-marker-alt"></i> 685 Market Street San
+                Francisco, CA 94105, US
+              </h4>
+              <h4>
+                <i class="fas fa-phone-alt"></i> Call us at (415) 555-5555
+              </h4>
+              <h4><i class="fas fa-envelope"></i> Email: example@domain.com</h4>
+
+              <div class="social-icon">
+                <a href="#">
+                  <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="icon">
+                    <i class="fab fa-google"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">About Us</li>
+                <li>About Lukla Outdoor</li>
+                <li>Career</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">Information</li>
+                <li>FAQ</li>
+                <li>Returns and Refund policy</li>
+                <li>Privacy policy</li>
+                <li>Terms and Condition</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">Payment Methods</li>
+                <li class="icon">
+                  <img src="./images/icon/paypal.png" alt="" />
+                </li>
+
+                <li class="icon">
+                  <img src="./images/icon/esewa.png" alt="" />
+                </li>
+
+                <li class="icon">
+                  <img src="./images/icon/master.png" alt="" />
+                </li>
+
+                <li class="icon">
+                  <img src="./images/icon/khalit.png" alt="" />
+                </li>
+
+                <li class="icon">
+                  <img src="./images/icon/visa.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- footer-end -->
+
+    <!-- quick-view-pop-start -->
+    <div class="quick-view-pop" id="product-details">
+      <div class="pop-bg"></div>
+      <div class="details">
+        <div class="quick-view-close">
+          <img src="./images/icon/close_big.svg" alt="" />
+        </div>
+        <div class="images active" id="color1">
+          <div class="swiper mySwiper">
+            <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/A13I0399__58224.1629091267.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/DRE27_01__10625.1629091267.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/DRE27_02__52917.1629091267.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/DRE27_03__68006.1629091267.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/GFworking1_01__31648.1629091267.jpg"
+                  alt=""
+                />
+              </div>
+            </div> -->
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/A13I0399__58224.1629091267.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/DRE27_01__10625.1629091267.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/DRE27_02__52917.1629091267.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/DRE27_03__68006.1629091267.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/clothing/derss/GFworking1_01__31648.1629091267.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="images" id="color2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/electronic/device/bluetooth-headphone.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/electronic/banner-custom-top-2-1_1024x1024_crop_center.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/electronic/device/tv.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img
+                  src="./images/electronic/device/desktop.jpg"
+                  id="img"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/electronic/device/ps5.jpg" id="img" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="images" id="color3">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/furniture/bn-cate5-1.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/furniture/bn-cate5-2.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/furniture/bn-cate5-3.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/furniture/bn-cate5-4.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/furniture/bn-cate5.jpg" id="img" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="images" id="color4">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/kitchen/bn-cate2-1.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/kitchen/bn-cate2-2.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/kitchen/bn-cate2-3.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/kitchen/bn-cate2-4.jpg" id="img" alt="" />
+              </div>
+
+              <div class="swiper-slide" id="zoom">
+                <img src="./images/kitchen/bn-cate2.jpg" id="img" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="item-details">
+          <a href="product-details.html">
+            <h3>RUFFLE NECK TIERED MAXI DRESS WITH PIN TUCKS IN RUST MULTI</h3>
+          </a>
+          <div class="rating">
+            <div class="stars" data-value="2"></div>
+          </div>
+
+          <div class="price">
+            <div class="new">
+              <div id="product-price-text">Rs <span>100</span></div>
+              <input
+                type="number"
+                name=""
+                id="product-price"
+                value="120"
+                readonly
+                hidden
+              />
+              <!-- <div class="text-price">0</div> -->
+            </div>
+            <div class="old"><del></del>$120.32</div>
+          </div>
+
+          <div class="profuct-desc">
+            <h4>Product Descriptions:</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, a perspiciatis est culpa corporis ex molestias sequi
+              iure impedit aliquid, explicabo laborum delectus necessitatibus
+              repellendus maxime odio, ut quasi officia!
+            </p>
+          </div>
+
+          <div class="product-varient">
+            <h4>Choose Product:</h4>
+
+            <div class="inner">
+              <input type="hidden" id="imageData" />
+
+              <div
+                class="img"
+                id="imageBtn"
+                data-id="2"
+                data-filter="color1"
+                data-size="false"
+                data-color-qty="10"
+                style="
+                  background-image: url(./images/clothing/derss/A13I0399__58224.1629091267.jpg);
+                "
+                alt="product-image"
+              ></div>
+
+              <div
+                class="img"
+                id="imageBtn"
+                data-id="4"
+                data-filter="color2"
+                data-size="false"
+                data-color-qty="12"
+                style="
+                  background-image: url(./images/electronic/device/bluetooth-headphone.jpg);
+                "
+                alt="product-image"
+              ></div>
+
+              <div
+                class="img"
+                id="imageBtn"
+                data-id="6"
+                data-filter="color3"
+                data-size="false"
+                data-color-qty="6"
+                style="background-image: url(./images/furniture/bn-cate5-1.jpg)"
+                alt="product-image"
+              ></div>
+
+              <div
+                class="img"
+                id="imageBtn"
+                data-id="10"
+                data-filter="color4"
+                data-size="false"
+                data-color-qty="8"
+                style="background-image: url(./images/kitchen/bn-cate2-1.jpg)"
+                alt="product-image"
+              ></div>
+            </div>
+          </div>
+
+          <form action="">
+            <div class="others">
+              <!-- <div class="size clothSizes" id="size1">
+                <h4>Size:</h4>
+                <ul id="all-size">
+                  <input type="hidden" name="" id="sizeInput" />
+                  <input type="hidden" name="" id="sizesQuantity" />
+                  <li data-value="2">s</li>
+                  <li data-value="6">m</li>
+                  <li data-value="10">xl</li>
+                  <li data-value="8">4xl</li>
+                </ul>
+              </div>
+
+              <div class="size clothSizes" id="size2">
+                <h4>Size:</h4>
+                <ul id="all-size">
+                  <input type="hidden" name="" id="sizeInput" />
+                  <input type="hidden" name="" id="sizesQuantity" />
+                  <li data-value="9">xs</li>
+                  <li data-value="2">s</li>
+                  <li data-value="6">m</li>
+                  <li data-value="17">xl</li>
+                  <li data-value="4">3xl</li>
+                  <li data-value="8">4xl</li>
+                </ul>
+              </div>
+
+              <div class="size clothSizes" id="size3">
+                <h4>Size:</h4>
+                <ul id="all-size">
+                  <input type="hidden" name="" id="sizeInput" />
+                  <input type="hidden" name="" id="sizesQuantity" />
+                  <li data-value="9">xs</li>
+                  <li data-value="2">s</li>
+                  <li data-value="6">m</li>
+                  <li data-value="4">3xl</li>
+                  <li data-value="8">4xl</li>
+                </ul>
+              </div>
+
+              <div class="size clothSizes" id="size4">
+                <h4>Size:</h4>
+                <ul id="all-size">
+                  <input type="hidden" name="" id="sizeInput" />
+                  <input type="hidden" name="" id="sizesQuantity" />
+                  <li data-value="17">xl</li>
+                  <li data-value="4">3xl</li>
+                </ul>
+              </div> -->
+
+              <div class="quantity">
+                <input type="number" id="fixQuantity" hidden />
+                <h4>Quantity:</h4>
+                <div class="group">
+                  <button class="sub-button">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+
+                  <input
+                    type="number"
+                    name=""
+                    class="quantity-number"
+                    value="1"
+                    readonly
+                  />
+
+                  <button class="add-button">
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button">Add To Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- quick-view-pop-end -->
+
+    <!-- mobile-nav-start -->
+    <div class="mobile-nav sticky-nav">
+      <div class="header">
+        <div class="nav-list">
+          <div class="icon side-nav-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="icon search-pop-btn">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <a href="wishlist.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Heart.svg" alt="" />
+              </div>
+            </div>
+          </a>
+
+          <div class="shopping-bag">
+            <a href="checkout.html">
+              <div class="cart">
+                <img
+                  class="bag-image"
+                  src="./images/icon/shopping-bag-light.svg"
+                  alt="bag"
+                />
+                <div class="count">49</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="login-signup.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Profile.svg" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-nav-end -->
+
+    <!-- search-pop-start -->
+    <div class="search-pop">
+      <div class="inner">
+        <select name="" id="">
+          <option value="">All Categories</option>
+          <option value="">Electronic</option>
+          <option value="">Clothing</option>
+          <option value="">Kitchen</option>
+          <option value="">Shooes</option>
+          <option value="">Brands</option>
+        </select>
+
+        <div class="group">
+          <input type="search" class="input" placeholder="Search..." required />
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="search-close-btn">
+          <img src="./images/icon/close_big.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- search-pop-end -->
+
+    <!-- side-nav-start -->
+    <!-- side-nav-bg -->
+    <div class="side-nav-bg">
+      <img class="cursor-close" src="./images/icon/shadow-close.svg" alt="" />
+    </div>
+
+    <!-- side-nav -->
+    <div class="side-nav">
+      <div class="side-nav-logo">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <div class="nav-close-btn">
+          <img src="./images/icon/shadow-close.svg" alt="" />
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Shop <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <li>
+              <a href="clothing.html">Clothing</a>
+            </li>
+
+            <li>
+              <a href="electronic.html">Electronic</a>
+            </li>
+
+            <li>
+              <a href="sneakers.html">Shoes</a>
+            </li>
+
+            <li>
+              <a href="kitchen.html">Kitchen</a>
+            </li>
+
+            <li>
+              <a href="bags.html">Bags</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Brands <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <li>
+              <a href="#">Sony</a>
+            </li>
+
+            <li>
+              <a href="#">Adidas</a>
+            </li>
+
+            <li>
+              <a href="#">Acer</a>
+            </li>
+
+            <li>
+              <a href="#">Samsung</a>
+            </li>
+
+            <li>
+              <a href="#">Puma</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- side-nav-end -->
+
+    <!-- scroll-to-top-start -->
+    <div class="scroll-to-top">
+      <img src="./images/icon/chevron_up.svg" alt="" />
+    </div>
+    <!-- scroll-to-top-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/quantity.js"></script>
+    <script src="./js/quick-view.js"></script>
+    <script src="./js/derss-size.js"></script>
+    <script src="./js/popup-form.js"></script>
+    <script src="./js/vendor-header.js"></script>
+    <script src="./js/wishlist-button.js"></script>
+    <script src="./js/product-color-change.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- swiper-js -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // banner
+      var swiper = new Swiper(".banner .mySwiper", {
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+      });
+
+      // quick-view-pop
+      var swiper = new Swiper(".quick-view-pop .mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          440: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+          750: {
+            slidesPerView: 1,
+            spaceBetween: 6,
+          },
+          798: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const stars = document.querySelectorAll(".stars");
+
+      const fullStar = `
+    <svg
+          width="17"
+          height="15"
+          viewBox="0 0 17 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.54896 0.927053C7.84831 0.00574255 9.15172 0.00574017 9.45107 0.927051L10.5588 4.33631C10.6927 4.74834 11.0766 5.0273 11.5099 5.0273H15.0946C16.0633 5.0273 16.4661 6.26691 15.6824 6.83631L12.7823 8.94335C12.4318 9.198 12.2851 9.64937 12.419 10.0614L13.5267 13.4706C13.8261 14.392 12.7716 15.1581 11.9879 14.5887L9.0878 12.4816C8.73732 12.227 8.26272 12.227 7.91223 12.4816L5.01214 14.5887C4.22843 15.1581 3.17395 14.392 3.4733 13.4707L4.58103 10.0614C4.71491 9.64937 4.56825 9.198 4.21776 8.94336L1.31767 6.83632C0.533959 6.26691 0.936732 5.0273 1.90546 5.0273H5.49017C5.92339 5.0273 6.30735 4.74834 6.44122 4.33631L7.54896 0.927053Z"
+            fill="#E28800"
+          />
+        </svg>
+  `;
+
+      const blankStar = `
+    <svg
+            width="16"
+            height="15"
+            viewBox="0 0 16 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.18947 1.08156C7.33914 0.620903 7.99085 0.620908 8.14052 1.08156L9.24826 4.49082C9.44907 5.10886 10.025 5.5273 10.6748 5.5273H14.2596C14.7439 5.5273 14.9453 6.14711 14.5535 6.4318L11.6534 8.53885C11.1276 8.92081 10.9076 9.59786 11.1084 10.2159L12.2162 13.6252C12.3659 14.0858 11.8386 14.4689 11.4468 14.1842L8.54667 12.0771C8.02094 11.6952 7.30905 11.6952 6.78332 12.0771L3.88323 14.1842C3.49137 14.4689 2.96413 14.0858 3.1138 13.6252L4.22154 10.2159C4.42235 9.59787 4.20236 8.92081 3.67663 8.53885L0.776543 6.43181C0.384683 6.1471 0.586076 5.5273 1.07043 5.5273H4.65515C5.30498 5.5273 5.88092 5.10886 6.08173 4.49082L7.18947 1.08156Z"
+              stroke="#8D8D8D"
+            />
+          </svg>
+  `;
+
+      stars.forEach((star, index) => {
+        let value = star.dataset.value;
+        let allStars = [];
+
+        for (let i = 0; i < value; i++) {
+          allStars.push(fullStar);
+        }
+
+        for (let j = 0; j < 5; j++) {
+          if (allStars.length != 5) {
+            allStars.push(blankStar);
+          }
+        }
+
+        stars[index].innerHTML =
+          allStars[0] + allStars[1] + allStars[2] + allStars[3] + allStars[4];
+      });
+    </script>
+
+    <script>
+      // image-magnify
+      const zooms = document.querySelectorAll("#zoom");
+
+      zooms.forEach((zoom) => {
+        $(zoom).zoom({ on: "click" });
+      });
+
+      // bags-new-product
+      $(document).ready(function () {
+        $(".box-item").not(".dataNew").hide("1000");
+      });
+
+      $(document).ready(function () {
+        $(".bags-new-product ul li").click(function () {
+          const value = $(this).attr("data-filters");
+          $(".box-item")
+            .not("." + value)
+            .hide("1000");
+          $(".box-item")
+            .filter("." + value)
+            .show("1000");
+        });
+
+        $(".bags-new-product ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

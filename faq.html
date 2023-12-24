@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <!-- zoom -->
+    <script src="./js/jquery.zoom.min.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <div id="fontUrlHere"></div>
+    <title>Document</title>
+  </head>
+
+  <div
+    id="syncColor"
+    main-color="#6f42c3"
+    pri-color="#b30e8c"
+    sec-color="#0571b9"
+    font-family="Lato"
+    font-url="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+  ></div>
+
+  <style></style>
+
+  <body>
+    <div class="loading">
+      <div
+        class="img"
+        style="background-image: url(./images/shopping-loader.gif)"
+      ></div>
+    </div>
+    <div class="desktop-nav sticky-nav">
+      <!-- header-start -->
+      <header>
+        <div class="menubar wrapper">
+          <a href="index.html">
+            <div class="logo">
+              <h1>LOGO</h1>
+            </div>
+          </a>
+
+          <div class="search">
+            <form action="">
+              <div class="group">
+                <select name="" id="">
+                  <option value="">All Categories</option>
+                  <option value="">Electronic</option>
+                  <option value="">Clothing</option>
+                  <option value="">Kitchen</option>
+                  <option value="">Shooes</option>
+                  <option value="">Brands</option>
+                </select>
+                <input
+                  type="search"
+                  class="input"
+                  placeholder="Search..."
+                  required
+                />
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="other">
+            <a href="wishlist.html">
+              <div class="wishlist">
+                <img src="./images/icon/Heart.svg" alt="heart" />
+                <div class="count">75</div>
+              </div>
+            </a>
+
+            <div class="cart">
+              <img
+                class="bag-image"
+                src="./images/icon/shopping-bag.svg"
+                alt="bag"
+              />
+              <div class="count">49</div>
+              <div class="shopping-cart-dropdown">
+                <div class="list">
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/bluetooth-headphone.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>HeadSet</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img src="./images/electronic/device/tv.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h4>UHD 4K TV</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/product-app-2_f3820da1-3014-42d6-bf64-e9b8b5cfd508_360x.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/A13I0399__58224.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/DRE27_01__10625.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="checkout.html">
+                  <button>Check Out</button>
+                </a>
+              </div>
+            </div>
+
+            <a href="login-signup.html">
+              <div class="login-signup">
+                <div class="icon">
+                  <img src="./images/icon/Profile.svg" alt="profile" />
+                </div>
+                <div class="text">
+                  <span>Login</span>
+                  <span>Register</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- header-end -->
+
+      <!-- nav-bar-start -->
+      <div class="nav-bar">
+        <ul class="wrapper">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="drop-down">
+            Shop <i class="fas fa-chevron-down"></i>
+            <ul class="drop">
+              <li>
+                <a href="clothing.html"> Chothings </a>
+              </li>
+
+              <li>
+                <a href="electronic.html"> Electronic </a>
+              </li>
+
+              <li>
+                <a href="sneakers.html"> Shoes </a>
+              </li>
+
+              <li>
+                <a href="kitchen.html"> Kitchen </a>
+              </li>
+
+              <li>
+                <a href="bags.html"> Bags </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="drop-down-brand">
+            Brands <i class="fas fa-chevron-down"></i>
+            <div class="drop-brand">
+              <div class="list">
+                <h3>Puma</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/NMD_R1_Shoes_White_GX0999_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sneakers</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/OZWEEGO_Shoes_Grey_GY1346_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sport</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/shoe19.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Boot</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="list">
+                <h3>Adidas</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/Ultraboost_DNA_Shoes_Black_GZ3292_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sneakers</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="list">
+                <h3>Sony</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/electronic/device/tv.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">UHD 4K Tv</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/electronic/device/bluetooth-headphone.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">
+                        High Quality Wireless HeadSet
+                      </div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/electronic/bn-cate1-2.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Home Threater</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- nav-bar-end -->
+    </div>
+
+    <div class="mobile-logo">
+      <div class="logo">
+        <h2>LOGO</h2>
+      </div>
+    </div>
+
+    <!-- faq-start -->
+    <section>
+      <div class="wrapper">
+        <div class="faq">
+          <div class="title">FAQ</div>
+
+          <div class="list">
+            <div class="item">
+              <div class="que">
+                <h4>
+                  WHAT IS THE MBA/ BBA PROGRAM OF PRESIDENTIAL BUSINESS SCHOOL
+                  LIKE?
+                </h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  The MBA at Presidential Business School is a 60-credit,
+                  two-year program while the BBA is a 120- credit, four-year
+                  program. The curricula in these programs confirm to the
+                  international standard upheld by the Westcliff University, and
+                  are molded to suit the need of the Nepalese market.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>
+                  WHAT IS THE MScIT/ BScIT PROGRAM OF PRESIDENTIAL BUSINESS
+                  SCHOOL LIKE?
+                </h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  The MScIT at Presidential Business School is a 60-credit,
+                  two-year program while the BScIT is a 120- credit, four-year
+                  program. The curricula in these programs confirm to the
+                  international standard upheld by the Westcliff University, and
+                  are molded to suit the need of the Nepalese market.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>WWHAT ARE THE ELLIGEBILITY CRITERIA?</h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <h4>MBA</h4>
+                <p>
+                  Bachelor’s degree in any discipline from recognized university
+                  of Nepal or from universities around the globe with a minimum
+                  CGPA of 2.0, or 45% or an equivalent grade scale in
+                  undergraduate level.
+                </p>
+
+                <br />
+
+                <h4>BBA</h4>
+
+                <p>
+                  Highschool/+2/A-Level or equivalent degree in any discipline
+                  from recognized board of Nepal or from any other board across
+                  the globe recognized by HSEB board of Nepal. For A- level, 3.5
+                  credit hours is required.
+                </p>
+
+                <br />
+
+                <h4>MScIT</h4>
+
+                <p>
+                  Bachelor’s degree in Information Technology or related
+                  discipline from recognized university of Nepal or from
+                  universities around the globe with a minimum CGPA of 2.0, or
+                  45% or an equivalent grade scale in undergraduate level.
+                </p>
+
+                <br />
+
+                <h4>BScIT</h4>
+
+                <p>
+                  Highschool/+2/A-Level or equivalent degree in any discipline
+                  from recognized board of Nepal or from any other board across
+                  the globe recognized by HSEB board of Nepal. For A- level, 3.5
+                  credit hours is required.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>WHAT ARE THE SELECTION CRITERIA FOR MBA/BBA?</h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Presidential Aptitude and Attitude Test (PAAT) is based on
+                  global entrance exam system and is conducted by Presidential
+                  Business School affiliated to Westcliff University, USA.
+                  Candidates need to complete two phases of PAAT.
+                </p>
+                <br />
+                <p>
+                  1) The written test is intended to assess candidates' aptitude
+                  like verbal and quantitative ability, logical reasoning,
+                  general awareness, business and economics knowledge, reading
+                  and writing skills of the candidate for admission in the
+                  undergraduate and graduate programs at PBS. The test includes
+                  multiple choice questions and writing section. The exam
+                  duration for PAAT is total 2.5 hours for both multiple choice
+                  questions and essay writing. PAAT incorporates following
+                  components for MBA and BBA admission:
+                </p>
+                <br />
+                <ul>
+                  <li class="heading">MBA</li>
+                  <li>Verbal Ability</li>
+                  <li>Quantitative Ability</li>
+                  <li>Critical Reading</li>
+                  <li>Logical Reasoning</li>
+                  <li>General Awareness / Business & Economics</li>
+                  <li>Writing Ability</li>
+                </ul>
+                <br />
+                <ul>
+                  <li class="heading">BBA</li>
+                  <li>Verbal Ability</li>
+                  <li>Quantitative Ability</li>
+                  <li>Critical Reading</li>
+                  <li>Logical Reasoning</li>
+                  <li>General Awareness / Business & Economics</li>
+                  <li>Writing Ability</li>
+                </ul>
+                <br />
+                <p>
+                  2) The interview session is intended to assess candidates’
+                  speaking and presentation skills along with their confidence
+                  and learning attitudes.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>WHAT ARE THE SELECTION CRITERIA FOR MScIT/BScIT?</h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Presidential Aptitude and Attitude Test (PAAT) is based on
+                  global entrance exam system and is conducted by Presidential
+                  Business School affiliated to Westcliff University, USA.
+                  Candidates need to complete two phases of PAAT.
+                </p>
+                <br />
+                <p>
+                  1) The written test is intended to assess candidates' aptitude
+                  like verbal and quantitative ability, logical reasoning,
+                  general awareness, business and Information Technology
+                  knowledge, reading and writing skills of the candidate for
+                  admission in the undergraduate and graduate programs at PBS.
+                  The test includes multiple choice questions and writing
+                  section. The exam duration for PAAT is total 2.5 hours for
+                  both multiple choice questions and essay writing. PAAT
+                  incorporates following components for MScIT and BScIT
+                  admission:
+                </p>
+                <br />
+                <ul>
+                  <li class="heading">MScIT</li>
+                  <li>Verbal Ability</li>
+                  <li>Quantitative Ability</li>
+                  <li>Critical Reading</li>
+                  <li>Logical Reasoning</li>
+                  <li>General Awareness / Business & Information Technology</li>
+                  <li>Writing Ability</li>
+                </ul>
+                <br />
+                <ul>
+                  <li class="heading">BBA</li>
+                  <li>Verbal Ability</li>
+                  <li>Reading Comprehension</li>
+                  <li>Quantitative Ability</li>
+                  <li>Logical Reasoning</li>
+                  <li>General Awareness / Business & Information Technology</li>
+                  <li>Writing Ability</li>
+                </ul>
+                <br />
+                <p>
+                  2) The interview session is intended to assess candidates’
+                  speaking and presentation skills along with their confidence
+                  and learning attitudes.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>
+                  DO I GET THE INTERNATIONAL CERTIFICATE FROM WESTCLIFF
+                  UNIVERSITY IN NEPAL?
+                </h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Yes, students will be getting globally recognized transcripts
+                  and other degree certificates from Westcliff University. In
+                  addition, PBS will provide Character Certificates and
+                  Recommendation Letters to its graduates.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>WHAT DOCUMENTS MUST I SUBMIT FOR MY ENROLLMENT at PBS?</h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Students must submit the following documents in the order in
+                  which they appear underneath:
+                </p>
+                <br />
+                <ul>
+                  <li>Application form (completed and signed)</li>
+                  <li>Application fees</li>
+                  <li>Recent passport-sized photos (5)</li>
+                  <li>Academic records</li>
+                  <li>Secondary and Higher Secondary Schools’ Certificates</li>
+                  <li>
+                    Certificate(s) of Bachelor’s Degree (and Master’s Degree),
+                    or equivalent qualifications of graduate studies with the
+                    respective Grade Reports
+                  </li>
+                  <li>
+                    Two recommendation letters sealed in the name of PBS from
+                    your former lecturers/ institutions
+                  </li>
+                  <li>Character Certificate</li>
+                  <li>
+                    English Language Proficiency Certificate; that states the
+                    previous degree has been completed in English medium
+                  </li>
+                  <li>
+                    Personal Statement (stating why PBS and what are your
+                    objectives for pursuing MBA/BBA)
+                  </li>
+                  <li>Citizenship English Translation Copy</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>HOW WILL MY APPLICATION BE EVALUATED?</h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Each application received is reviewed in depth by the
+                  Admissions Department. When selecting students, we put an
+                  emphasis on leadership potential, strong academic ability,
+                  communication skills, learning attitude and personal qualities
+                  and characteristics.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>
+                  HOW DO I ADD NEW INFORMATION IF I HAVE ALREADY SUBMITTED MY
+                  APPLICATION?
+                </h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Applicants must submit the additional documents and / or
+                  information and should inform the Admissions Department about
+                  the updates.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="que">
+                <h4>
+                  DOES THE REPUTATION/HISTORY OF MY UNDERGRADUATE INSTITUTION OR
+                  COMPANY AFFECT MY CHANCES OF BEING ACCEPTED?
+                </h4>
+                <div class="icon">
+                  <img src="./images/icon/close_big_light.svg" alt="" />
+                </div>
+              </div>
+              <div class="ans">
+                <p>
+                  Our goal is to admit a class that offers a variety of
+                  perspectives. Therefore, we carefully consider individuals
+                  from a wide spectrum of academic and work experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq-end -->
+
+    <!-- footer-start -->
+    <section class="footer-bg">
+      <div class="wrapper">
+        <footer>
+          <div class="subscribe">
+            <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <h5>Get the latest updates on new products and upcoming sales</h5>
+            <form action="">
+              <div class="group">
+                <input
+                  type="email"
+                  placeholder="enter your email address"
+                  required
+                />
+                <button class="send-btn">
+                  <img src="./images/icon/Send.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <ul>
+                <li class="heading">CATEGORIES</li>
+                <li>Appliances</li>
+                <li>Computers & Laptops</li>
+                <li>Cameras</li>
+                <li>Mobile Phones & Tablets</li>
+                <li>Televisions</li>
+                <li>Video Games & Systems</li>
+                <li>Weekly Deals</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">FURTHER INFO.</li>
+                <li>About us</li>
+                <li>Gift Certificates</li>
+                <li>Theme Styles</li>
+                <li>Contact us</li>
+                <li>Blog</li>
+                <li>Brands</li>
+                <li>Sitemap</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">CUSTOMER SERVICE</li>
+                <li>Help & FAQs</li>
+                <li>Terms of Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Online Returns Policy</li>
+                <li>Rewards Program</li>
+                <li>Rebate Center</li>
+                <li>Partners</li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <div class="logo">
+                <img src="./images/logo/final logo white.png" alt="" />
+              </div>
+              <h4>
+                <i class="fas fa-map-marker-alt"></i> 685 Market Street San
+                Francisco, CA 94105, US
+              </h4>
+              <h4>
+                <i class="fas fa-phone-alt"></i> Call us at (415) 555-5555
+              </h4>
+              <h4><i class="fas fa-envelope"></i> Email: example@domain.com</h4>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- footer-end -->
+
+    <!-- mobile-nav-start -->
+    <div class="mobile-nav sticky-nav">
+      <div class="header">
+        <div class="nav-list">
+          <div class="icon side-nav-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="icon search-pop-btn">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <a href="wishlist.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Heart.svg" alt="" />
+              </div>
+            </div>
+          </a>
+
+          <div class="shopping-bag">
+            <a href="checkout.html">
+              <div class="cart">
+                <img
+                  class="bag-image"
+                  src="./images/icon/shopping-bag-light.svg"
+                  alt="bag"
+                />
+                <div class="count">49</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="login-signup.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Profile.svg" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-nav-end -->
+
+    <!-- search-pop-start -->
+    <div class="search-pop">
+      <div class="inner">
+        <select name="" id="">
+          <option value="">All Categories</option>
+          <option value="">Electronic</option>
+          <option value="">Clothing</option>
+          <option value="">Kitchen</option>
+          <option value="">Shooes</option>
+          <option value="">Brands</option>
+        </select>
+
+        <div class="group">
+          <input type="search" class="input" placeholder="Search..." required />
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="search-close-btn">
+          <img src="./images/icon/close_big.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- search-pop-end -->
+
+    <!-- side-nav-start -->
+    <!-- side-nav-bg -->
+    <div class="side-nav-bg">
+      <img class="cursor-close" src="./images/icon/shadow-close.svg" alt="" />
+    </div>
+    <!-- side-nav -->
+    <div class="side-nav">
+      <div class="side-nav-logo">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <div class="nav-close-btn">
+          <img src="./images/icon/shadow-close.svg" alt="" />
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Shop <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <li>
+              <a href="clothing.html">Clothing</a>
+            </li>
+
+            <li>
+              <a href="electronic.html">Electronic</a>
+            </li>
+
+            <li>
+              <a href="sneakers.html">Shoes</a>
+            </li>
+
+            <li>
+              <a href="kitchen.html">Kitchen</a>
+            </li>
+
+            <li>
+              <a href="bags.html">Bags</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Brands <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <li>
+              <a href="#">Sony</a>
+            </li>
+
+            <li>
+              <a href="#">Adidas</a>
+            </li>
+
+            <li>
+              <a href="#">Acer</a>
+            </li>
+
+            <li>
+              <a href="#">Samsung</a>
+            </li>
+
+            <li>
+              <a href="#">Puma</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- side-nav-end -->
+
+    <!-- scroll-to-top-start -->
+    <div class="scroll-to-top">
+      <img src="./images/icon/chevron_up.svg" alt="" />
+    </div>
+    <!-- scroll-to-top-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+
+    <script>
+      const faqs = document.querySelectorAll(".faq .item");
+
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

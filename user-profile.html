@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="./css/animation.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <!-- zoom -->
+    <script src="./js/jquery.zoom.min.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loading">
+      <div
+        class="img"
+        style="background-image: url(./images/shopping-loader.gif)"
+      ></div>
+    </div>
+
+    <div class="desktop-nav sticky-nav">
+      <!-- header-start -->
+      <header>
+        <div class="menubar wrapper">
+          <a href="index.html">
+            <div class="logo">
+              <h1>LOGO</h1>
+            </div>
+          </a>
+
+          <div class="search">
+            <form action="">
+              <div class="group">
+                <div class="custom_select">
+                  <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">All Categories</option>
+                    <option value="">Electronic</option>
+                    <option value="">Clothing</option>
+                    <option value="">Kitchen</option>
+                    <option value="">Shooes</option>
+                    <option value="">Brands</option>
+                  </select>
+                </div>
+                <input
+                  type="search"
+                  class="input"
+                  placeholder="Search..."
+                  required
+                />
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="other">
+            <a href="wishlist.html">
+              <div class="wishlist">
+                <img src="./images/icon/Heart.svg" alt="heart" />
+                <div class="count">75</div>
+              </div>
+            </a>
+
+            <div class="cart">
+              <img
+                class="bag-image"
+                src="./images/icon/shopping-bag.svg"
+                alt="bag"
+              />
+              <div class="count">49</div>
+              <div class="shopping-cart-dropdown">
+                <div class="list">
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/bluetooth-headphone.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>HeadSet</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img src="./images/electronic/device/tv.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h4>UHD 4K TV</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/product-app-2_f3820da1-3014-42d6-bf64-e9b8b5cfd508_360x.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/A13I0399__58224.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/DRE27_01__10625.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="checkout.html">
+                  <button>Check Out</button>
+                </a>
+              </div>
+            </div>
+
+            <a href="sign-in.html">
+              <div class="login-signup">
+                <div class="icon">
+                  <img src="./images/icon/Profile.svg" alt="profile" />
+                </div>
+
+                <div class="sign-in-sign-up-dropdown">
+                  <ul>
+                    <a href="user-profile.html">
+                      <li><i class="fas fa-user"></i> Profile</li>
+                    </a>
+
+                    <a href="my-orders.html">
+                      <li><i class="fas fa-box"></i> My Orders</li>
+                    </a>
+
+                    <a href="#">
+                      <li><i class="fas fa-cog"></i> Setting</li>
+                    </a>
+
+                    <a href="#">
+                      <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- header-end -->
+
+      <!-- nav-bar-start -->
+      <div class="nav-bar">
+        <ul class="wrapper">
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+
+          <li class="drop-down">
+            Shop <i class="fas fa-chevron-down"></i>
+            <ul class="drop">
+              <a href="clothing.html">
+                <li>Chothings</li>
+              </a>
+
+              <a href="electronic.html">
+                <li>Electronic</li>
+              </a>
+
+              <a href="sneakers.html">
+                <li>Shoes</li>
+              </a>
+
+              <a href="kitchen.html">
+                <li>Kitchen</li>
+              </a>
+
+              <a href="bags.html">
+                <li>Bags</li>
+              </a>
+            </ul>
+          </li>
+
+          <li class="drop-down-brand">
+            Brands <i class="fas fa-chevron-down"></i>
+            <div class="drop-brand">
+              <!-- <div class="list">
+                <h3>Adidas</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/Ultraboost_DNA_Shoes_Black_GZ3292_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sneakers</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div> -->
+              <a href="#">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/clothing/shoes/NMD_R1_Shoes_White_GX0999_01_standard.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Adidas</div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/clothing/bags/product-16.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Kings</div>
+                </div>
+              </a>
+
+              <!-- <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/electronic/deals/bluetooth-headphone.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Skull Candy</div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/clothing/shoes/shoe19.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Puma</div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/electronic/device/tv.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Samsung</div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/electronic/deals/laptop.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Dell</div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/clothing/derss/DRE27_03__68006.1629091267.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Queen</div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/bags/product/product-details-img4.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Tom And Jerry</div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/bags/product/bag1.jpg);
+                    "
+                  ></div>
+                  <div class="product-name">Guchi</div>
+                </a>
+              </div> -->
+            </div>
+          </li>
+
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+      <!-- nav-bar-end -->
+    </div>
+
+    <div class="mobile-logo">
+      <div class="logo">
+        <h2>LOGO</h2>
+      </div>
+    </div>
+
+    <!-- side-nav-bg -->
+    <div class="side-nav-bg">
+      <img class="cursor-close" src="./images/icon/shadow-close.svg" alt="" />
+    </div>
+
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Collection Form</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="UserImage">Your Image</label>
+              <input type="file" id="UserImage" />
+            </div>
+
+            <div class="image">
+              <img src="./images/profile.jpeg" alt="user-image" />
+            </div>
+
+            <div class="group">
+              <label for="UserName">Your Name</label>
+              <input type="text" id="UserName" />
+            </div>
+
+            <div class="group">
+              <label for="YourEmail">Your Email</label>
+              <input type="email" id="YourEmail" />
+            </div>
+
+            <div class="group">
+              <label for="Locations">Locations</label>
+              <input type="text" id="Locations" />
+            </div>
+
+            <div class="group">
+              <label for="mobileNumber">Mobile Number</label>
+              <input type="number" id="mobileNumber" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Collection</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <!-- popup-form-add-item-start -->
+    <div class="" id="popup-form-add-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Change Password Form</h3>
+          <div class="add-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="collectionName">Old Password</label>
+              <input type="password" id="collectionName" />
+            </div>
+
+            <div class="group">
+              <label for="collectionName">New Password</label>
+              <input type="password" id="collectionName" />
+            </div>
+
+            <div class="group">
+              <label for="collectionImage">Confirm Password</label>
+              <input type="password" id="collectionImage" />
+            </div>
+          </div>
+
+          <button class="add-item-button">Change Password</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-add-item-end -->
+
+    <section>
+      <div class="wrapper">
+        <div class="user-profile-page">
+          <div>
+            <div class="user-profile-info">
+              <div class="user-profile">
+                <img
+                  src="./images/profile.jpeg"
+                  class="user-image"
+                  alt="user-image"
+                />
+
+                <div class="user-details">
+                  <div class="user-name">User Name</div>
+                  <div class="user-email">user@gmail.com</div>
+                </div>
+
+                <div class="btn-group">
+                  <button id="addItem">Edit Profile</button>
+                  <button id="addItem">Change Password</button>
+                </div>
+              </div>
+
+              <ul class="user-other-infos">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3>Lives in <strong>Kathmandu</strong></h3>
+                </li>
+
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <h3>Mobile <strong>+977-9876543210</strong></h3>
+                </li>
+
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <h3><strong>user@gmail.com</strong></h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="recently-order">
+              <div class="title">Recent Order Product</div>
+
+              <div class="recent-porduct-list">
+                <div class="product">
+                  <img
+                    class="product-image"
+                    src="./images/electronic/device/bluetooth-headphone.jpg"
+                    alt=""
+                  />
+                  <div class="details">
+                    <div class="name">Bluetooth Headphone</div>
+                    <div class="qty">QTY: 10</div>
+                    <div class="price">120000/-</div>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <img
+                    class="product-image"
+                    src="./images/electronic/device/ps5.jpg"
+                    alt=""
+                  />
+                  <div class="details">
+                    <div class="name">Playstation 5</div>
+                    <div class="qty">QTY: 10</div>
+                    <div class="price">1020000/-</div>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <img
+                    class="product-image"
+                    src="./images/electronic/device/camera.jpg"
+                    alt=""
+                  />
+                  <div class="details">
+                    <div class="name">DSLR Camera</div>
+                    <div class="qty">QTY: 4</div>
+                    <div class="price">1930000/-</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-start -->
+    <section class="bg">
+      <div class="wrapper">
+        <footer>
+          <div class="subscribe">
+            <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <h5>Get the latest updates on new products and upcoming sales</h5>
+            <form action="">
+              <div class="group">
+                <input
+                  type="email"
+                  placeholder="enter your email address"
+                  required
+                />
+                <button class="send-btn">
+                  <img src="./images/icon/Send.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <ul>
+                <li class="heading">CATEGORIES</li>
+                <li>Appliances</li>
+                <li>Computers & Laptops</li>
+                <li>Cameras</li>
+                <li>Mobile Phones & Tablets</li>
+                <li>Televisions</li>
+                <li>Video Games & Systems</li>
+                <li>Weekly Deals</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">FURTHER INFO.</li>
+                <li>About us</li>
+                <li>Gift Certificates</li>
+                <li>Theme Styles</li>
+                <li>Contact us</li>
+                <li>Blog</li>
+                <li>Brands</li>
+                <li>Sitemap</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">CUSTOMER SERVICE</li>
+                <li>Help & FAQs</li>
+                <li>Terms of Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Online Returns Policy</li>
+                <li>Rewards Program</li>
+                <li>Rebate Center</li>
+                <li>Partners</li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <div class="logo">
+                <h1>LOGO</h1>
+              </div>
+              <h4>
+                <i class="fas fa-map-marker-alt"></i> 685 Market Street San
+                Francisco, CA 94105, US
+              </h4>
+              <h4>
+                <i class="fas fa-phone-alt"></i> Call us at (415) 555-5555
+              </h4>
+              <h4><i class="fas fa-envelope"></i> Email: example@domain.com</h4>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- footer-end -->
+
+    <!-- mobile-nav-start -->
+    <div class="mobile-nav sticky-nav">
+      <div class="header">
+        <div class="nav-list">
+          <div class="icon side-nav-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="icon search-pop-btn">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <a href="wishlist.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Heart.svg" alt="" />
+              </div>
+            </div>
+          </a>
+
+          <div class="shopping-bag">
+            <a href="checkout.html">
+              <div class="cart">
+                <img
+                  class="bag-image"
+                  src="./images/icon/shopping-bag-light.svg"
+                  alt="bag"
+                />
+                <div class="count">49</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="sign-in.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Profile.svg" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-nav-end -->
+
+    <!-- search-pop-start -->
+    <div class="search-pop">
+      <form action="">
+        <div class="inner">
+          <select name="" id="">
+            <option value="">All Categories</option>
+            <option value="">Electronic</option>
+            <option value="">Clothing</option>
+            <option value="">Kitchen</option>
+            <option value="">Shooes</option>
+            <option value="">Brands</option>
+          </select>
+
+          <div class="group">
+            <input
+              type="search"
+              class="input"
+              placeholder="Search..."
+              required
+            />
+            <button class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <div class="search-close-btn">
+            <img src="./images/icon/close_big.svg" alt="" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- search-pop-end -->
+
+    <!-- side-nav-start -->
+
+    <!-- side-nav -->
+    <div class="side-nav">
+      <div class="side-nav-logo">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <div class="nav-close-btn">
+          <img src="./images/icon/shadow-close.svg" alt="" />
+        </div>
+      </div>
+      <ul>
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+
+        <li class="side_nav_dropdown">
+          <span>Shop <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <a href="clothing.html">
+              <li>Chothings</li>
+            </a>
+
+            <a href="electronic.html">
+              <li>Electronic</li>
+            </a>
+
+            <a href="sneakers.html">
+              <li>Shoes</li>
+            </a>
+
+            <a href="kitchen.html">
+              <li>Kitchen</li>
+            </a>
+
+            <a href="bags.html">
+              <li>Bags</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Brands <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <a href="clothing.html">
+              <li>Chothings</li>
+            </a>
+
+            <a href="electronic.html">
+              <li>Electronic</li>
+            </a>
+
+            <a href="sneakers.html">
+              <li>Shoes</li>
+            </a>
+
+            <a href="kitchen.html">
+              <li>Kitchen</li>
+            </a>
+
+            <a href="bags.html">
+              <li>Bags</li>
+            </a>
+          </ul>
+        </li>
+
+        <a href="contact.html">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+    <!-- side-nav-end -->
+
+    <!-- scroll-to-top-start -->
+    <div class="scroll-to-top">
+      <img src="./images/icon/chevron_up_light.svg" alt="" />
+    </div>
+    <!-- scroll-to-top-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/quantity.js"></script>
+    <script src="./js/quick-view.js"></script>
+    <script src="./js/derss-size.js"></script>
+    <script src="./js/wishlist-button.js"></script>
+    <script src="./js/popup-form.js"></script>
+
+    <!-- swiper-js -->
+    <script src="./js/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      // banner
+      var swiper = new Swiper(".banner .mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+      });
+
+      // deals
+      var swiper = new Swiper(".deals .mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          700: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        },
+      });
+
+      // quick-view-pop
+      var swiper = new Swiper(".quick-view-pop .mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          440: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+          750: {
+            slidesPerView: 1,
+            spaceBetween: 6,
+          },
+          798: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const stars = document.querySelectorAll(".stars");
+
+      const fullStar = `
+    <svg
+          width="12"
+          height="12"
+          viewBox="0 0 17 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.54896 0.927053C7.84831 0.00574255 9.15172 0.00574017 9.45107 0.927051L10.5588 4.33631C10.6927 4.74834 11.0766 5.0273 11.5099 5.0273H15.0946C16.0633 5.0273 16.4661 6.26691 15.6824 6.83631L12.7823 8.94335C12.4318 9.198 12.2851 9.64937 12.419 10.0614L13.5267 13.4706C13.8261 14.392 12.7716 15.1581 11.9879 14.5887L9.0878 12.4816C8.73732 12.227 8.26272 12.227 7.91223 12.4816L5.01214 14.5887C4.22843 15.1581 3.17395 14.392 3.4733 13.4707L4.58103 10.0614C4.71491 9.64937 4.56825 9.198 4.21776 8.94336L1.31767 6.83632C0.533959 6.26691 0.936732 5.0273 1.90546 5.0273H5.49017C5.92339 5.0273 6.30735 4.74834 6.44122 4.33631L7.54896 0.927053Z"
+            fill="#E28800"
+          />
+        </svg>
+  `;
+
+      const blankStar = `
+    <svg
+            width="12"
+            height="12"
+            viewBox="0 0 17 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.18947 1.08156C7.33914 0.620903 7.99085 0.620908 8.14052 1.08156L9.24826 4.49082C9.44907 5.10886 10.025 5.5273 10.6748 5.5273H14.2596C14.7439 5.5273 14.9453 6.14711 14.5535 6.4318L11.6534 8.53885C11.1276 8.92081 10.9076 9.59786 11.1084 10.2159L12.2162 13.6252C12.3659 14.0858 11.8386 14.4689 11.4468 14.1842L8.54667 12.0771C8.02094 11.6952 7.30905 11.6952 6.78332 12.0771L3.88323 14.1842C3.49137 14.4689 2.96413 14.0858 3.1138 13.6252L4.22154 10.2159C4.42235 9.59787 4.20236 8.92081 3.67663 8.53885L0.776543 6.43181C0.384683 6.1471 0.586076 5.5273 1.07043 5.5273H4.65515C5.30498 5.5273 5.88092 5.10886 6.08173 4.49082L7.18947 1.08156Z"
+              stroke="#8D8D8D"
+            />
+          </svg>
+  `;
+
+      stars.forEach((star, index) => {
+        let value = star.dataset.value;
+        let allStars = [];
+
+        for (let i = 0; i < value; i++) {
+          allStars.push(fullStar);
+        }
+
+        for (let j = 0; j < 5; j++) {
+          if (allStars.length != 5) {
+            allStars.push(blankStar);
+          }
+        }
+
+        stars[index].innerHTML =
+          allStars[0] + allStars[1] + allStars[2] + allStars[3] + allStars[4];
+      });
+    </script>
+
+    <script>
+      // image-magnify
+      const zooms = document.querySelectorAll("#zoom");
+
+      zooms.forEach((zoom) => {
+        $(zoom).zoom({ on: "click" });
+      });
+    </script>
+  </body>
+</html>

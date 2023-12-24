@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="./css/animation.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <!-- zoom -->
+    <script src="./js/jquery.zoom.min.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <div id="fontUrlHere"></div>
+    <title>Document</title>
+  </head>
+
+  <div
+    id="syncColor"
+    main-color="#6f42c3"
+    pri-color="#b30e8c"
+    sec-color="#0571b9"
+    font-family="Lato"
+    font-url="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+  ></div>
+
+  <body>
+    <div class="loading">
+      <div
+        class="img"
+        style="background-image: url(./images/shopping-loader.gif)"
+      ></div>
+    </div>
+    <div class="desktop-nav sticky-nav">
+      <!-- header-start -->
+      <header>
+        <div class="menubar wrapper">
+          <a href="index.html">
+            <div class="logo">
+              <h1>LOGO</h1>
+            </div>
+          </a>
+
+          <div class="search">
+            <form action="">
+              <div class="group">
+                <div class="custom_select">
+                  <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">All Categories</option>
+                    <option value="">Electronic</option>
+                    <option value="">Clothing</option>
+                    <option value="">Kitchen</option>
+                    <option value="">Shooes</option>
+                    <option value="">Brands</option>
+                  </select>
+                </div>
+                <input
+                  type="search"
+                  class="input"
+                  placeholder="Search..."
+                  required
+                />
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="other">
+            <a href="wishlist.html">
+              <div class="wishlist">
+                <img src="./images/icon/Heart.svg" alt="heart" />
+                <div class="count">75</div>
+              </div>
+            </a>
+
+            <div class="cart">
+              <img
+                class="bag-image"
+                src="./images/icon/shopping-bag.svg"
+                alt="bag"
+              />
+              <div class="count">49</div>
+              <div class="shopping-cart-dropdown">
+                <div class="list">
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/bluetooth-headphone.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>HeadSet</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img src="./images/electronic/device/tv.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <h4>UHD 4K TV</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/product-app-2_f3820da1-3014-42d6-bf64-e9b8b5cfd508_360x.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/A13I0399__58224.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="image">
+                      <img
+                        src="./images/clothing/derss/DRE27_01__10625.1629091267.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <h4>Freezer</h4>
+                      <h6><span>Qty:</span> 1</h6>
+                      <h5>Rs 1200 /-</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="checkout.html">
+                  <button>Check Out</button>
+                </a>
+              </div>
+            </div>
+
+            <a href="sign-in.html">
+              <div class="login-signup">
+                <div class="icon">
+                  <img src="./images/icon/Profile.svg" alt="profile" />
+                </div>
+                <div class="text">
+                  <span>Login</span>
+                  <span>Register</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- header-end -->
+
+      <!-- nav-bar-start -->
+      <div class="nav-bar">
+        <ul class="wrapper">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="drop-down">
+            Shop <i class="fas fa-chevron-down"></i>
+            <ul class="drop">
+              <li>
+                <a href="clothing.html"> Chothings </a>
+              </li>
+
+              <li>
+                <a href="electronic.html"> Electronic </a>
+              </li>
+
+              <li>
+                <a href="sneakers.html"> Shoes </a>
+              </li>
+
+              <li>
+                <a href="kitchen.html"> Kitchen </a>
+              </li>
+
+              <li>
+                <a href="bags.html"> Bags </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="drop-down-brand">
+            Brands <i class="fas fa-chevron-down"></i>
+            <div class="drop-brand">
+              <div class="list">
+                <h3>Puma</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/NMD_R1_Shoes_White_GX0999_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sneakers</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/OZWEEGO_Shoes_Grey_GY1346_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sport</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/shoe19.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Boot</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="list">
+                <h3>Adidas</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/clothing/shoes/Ultraboost_DNA_Shoes_Black_GZ3292_01_standard.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Sneakers</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="list">
+                <h3>Sony</h3>
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/electronic/device/tv.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">UHD 4K Tv</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/electronic/device/bluetooth-headphone.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">
+                        High Quality Wireless HeadSet
+                      </div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="item">
+                    <div
+                      class="image"
+                      style="
+                        background-image: url(./images/electronic/bn-cate1-2.jpg);
+                      "
+                    ></div>
+                    <div class="details">
+                      <div class="product-name">Home Threater</div>
+                      <div class="product-price">$28.31</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- nav-bar-end -->
+    </div>
+
+    <div class="mobile-logo">
+      <div class="logo">
+        <h2>LOGO</h2>
+      </div>
+    </div>
+
+    <!-- popup-form-edit-item-start -->
+    <div class="" id="popup-form-edit-item">
+      <div class="inner">
+        <div class="add-item-form-title">
+          <h3>Fashion Form Edit</h3>
+          <div class="edit-item-close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <div class="group">
+              <label for="bannerName">Banner Name</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerName">Banner Link</label>
+              <input type="text" id="bannerName" />
+            </div>
+
+            <div class="group">
+              <label for="bannerImage">Banner Image</label>
+              <input type="file" id="bannerImage" />
+            </div>
+
+            <div class="group">
+              <label for="bannerDesc">Banner Name</label>
+              <textarea name="" id="bannerDesc" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+
+          <button class="add-item-button">Add Banner</button>
+        </form>
+      </div>
+    </div>
+    <!-- popup-form-edit-item-end -->
+
+    <!-- delete-confirm-start -->
+    <div class="" id="delete-confirm">
+      <div class="inner">
+        <h4>Are you sure you want to delete</h4>
+
+        <div class="btn-group">
+          <button class="popup-delete-close" id="delete-confirm-close">
+            Cancel
+          </button>
+
+          <form action="">
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- delete-confirm-end -->
+
+    <section>
+      <div class="wrapper">
+        <div class="checkout-page">
+          <div class="title">Check Out</div>
+
+          <div class="table">
+            <table>
+              <tr class="title-sec">
+                <th class="name">Select</th>
+                <th class="name">Product</th>
+                <th class="name">Price</th>
+                <th class="name">Discount Price</th>
+                <th class="name">Size</th>
+                <th class="name">Quantity</th>
+                <th class="name">Total</th>
+                <th class="name">Delete</th>
+              </tr>
+
+              <tr class="item">
+                <form action="">
+                  <input type="hidden" id="grand-total" value="1000" readonly />
+
+                  <td>
+                    <div class="checkbox">
+                      <input
+                        type="checkbox"
+                        id="total-price-submit"
+                        class="checked"
+                      />
+                      <button
+                        type="submit"
+                        name=""
+                        id="forcedClicked"
+                        hidden
+                      ></button>
+                    </div>
+                  </td>
+
+                  <td>
+                    <a href="product-details.html">
+                      <div class="image">
+                        <img src="./images/electronic/device/tv.jpg" alt="" />
+
+                        <div class="group">
+                          <div class="product-name">
+                            Head Phone Sony High quality sounds
+                          </div>
+
+                          <div class="vendor-name">
+                            Shipping By: Pankaj Sharma
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+
+                  <td>
+                    <div class="price">Rs 100</div>
+                    <input type="hidden" id="price" value="100" />
+                  </td>
+
+                  <td>
+                    <div class="inner">
+                      <div class="discount-price">Rs 10</div>
+                      <input type="hidden" id="discountPrice" value="10" />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="size" id="productSizeQuantity" data-value="10">
+                      XXL
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="quantity">
+                      <div class="group">
+                        <button class="sub-button">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <input
+                          type="number"
+                          name=""
+                          class="quantity-number"
+                          value="2"
+                          readonly
+                        />
+
+                        <button class="add-button">
+                          <i class="fas fa-chevron-up"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">
+                      Rs
+                      <div class="innerPrice">90</div>
+
+                      <input
+                        type="number"
+                        name=""
+                        id="product-price"
+                        value="90"
+                        readonly
+                        hidden
+                      />
+                    </div>
+                  </td>
+                </form>
+
+                <td>
+                  <div class="delete">
+                    <img src="./images/icon/close_big.svg" alt="" />
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="item">
+                <form action="">
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox" id="total-price-submit" />
+                      <button
+                        type="submit"
+                        name=""
+                        id="forcedClicked"
+                        hidden
+                      ></button>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="image">
+                      <img src="./images/electronic/device/camera.jpg" alt="" />
+
+                      <div class="group">
+                        <div class="product-name">
+                          Head Phone Sony High quality sounds
+                        </div>
+
+                        <div class="vendor-name">
+                          Shipping By: Pankaj Sharma
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">Rs 1000</div>
+                    <input type="hidden" id="price" value="1000" />
+                  </td>
+
+                  <td>
+                    <div class="inner">
+                      <div class="discount-price">Rs 100</div>
+                      <input type="hidden" id="discountPrice" value="100" />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="size" id="productSizeQuantity" data-value="5">
+                      XXL
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="quantity">
+                      <div class="group">
+                        <button class="sub-button">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <input
+                          type="number"
+                          name=""
+                          class="quantity-number"
+                          value="1"
+                          readonly
+                        />
+
+                        <button class="add-button">
+                          <i class="fas fa-chevron-up"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price" id="totalPrice">
+                      Rs
+
+                      <div class="innerPrice">1000</div>
+
+                      <input
+                        type="number"
+                        name=""
+                        id="product-price"
+                        value="100"
+                        readonly
+                        hidden
+                      />
+                    </div>
+                  </td>
+                </form>
+
+                <td>
+                  <form action="">
+                    <button class="delete">
+                      <img src="./images/icon/close_big.svg" alt="" />
+                    </button>
+                  </form>
+                </td>
+              </tr>
+
+              <tr class="item">
+                <form action="">
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox" id="total-price-submit" />
+                      <button
+                        type="submit"
+                        name=""
+                        id="forcedClicked"
+                        hidden
+                      ></button>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="image">
+                      <img
+                        src="./images/electronic/device/bluetooth-headphone.jpg"
+                        alt=""
+                      />
+
+                      <div class="group">
+                        <div class="product-name">
+                          Head Phone Sony High quality sounds
+                        </div>
+
+                        <div class="vendor-name">
+                          Shipping By: Pankaj Sharma
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">Rs 200</div>
+                    <input type="hidden" id="price" value="200" />
+                  </td>
+
+                  <td>
+                    <div class="inner">
+                      <div class="discount-price">Rs 100</div>
+                      <input type="hidden" id="discountPrice" value="100" />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="size" id="productSizeQuantity" data-value="22">
+                      XXL
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="quantity">
+                      <div class="group">
+                        <button class="sub-button">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <input
+                          type="number"
+                          name=""
+                          class="quantity-number"
+                          value="1"
+                          readonly
+                        />
+
+                        <button class="add-button">
+                          <i class="fas fa-chevron-up"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price" id="totalPrice">
+                      Rs
+
+                      <div class="innerPrice">200</div>
+
+                      <input
+                        type="number"
+                        name=""
+                        id="product-price"
+                        value="100"
+                        readonly
+                        hidden
+                      />
+                    </div>
+                  </td>
+                </form>
+
+                <td>
+                  <div class="delete">
+                    <img src="./images/icon/close_big.svg" alt="" />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- <div class="item">
+            <div class="image">
+              <img
+                src="./images/electronic/device/bluetooth-headphone.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="all-details">
+              <a href="#">
+                <div class="product-name">
+                  Head Phone Sony High quality sounds
+                </div>
+              </a>
+
+              <div class="price">Rs 1000 /-</div>
+
+              <div class="quantity">
+                <div class="group">
+                  <button class="sub-button">
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <input type="number" value="1" class="quantity-number" />
+                  <button class="add-button">
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="delete">
+              <img src="./images/icon/close_big.svg" alt="" />
+            </div>
+          </div> -->
+
+          <div class="total-price-sec">
+            <div class="all-rounded">
+              <h6>
+                Total: Rs
+                <input type="number" id="total-price" value="0" readonly />
+              </h6>
+
+              <h6>
+                Shipping Fee:
+                <input type="number" value="24" id="shipping-price" readonly />
+              </h6>
+
+              <div class="total-price">
+                Grand Total:
+                <input type="number" id="grand-total" value="0" readonly />
+              </div>
+
+              <div class="continue-shopping">
+                <a href="#">
+                  <button disabled>Checkout</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="continue-shopping">
+              <a href="all-product.html">
+                <button>Continue Shopping</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="payment-section">
+            <div class="all-cart-product">
+              <div class="p-title">Your Product</div>
+
+              <div class="product-list">
+                <div class="product">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/electronic/device/bluetooth-headphone.jpg);
+                    "
+                  >
+                    <!-- quantity -->
+                    <div class="qut">20</div>
+                  </div>
+                  <div class="details">
+                    <div class="name">Head Phone Sony High quality sounds</div>
+                    <div class="vendor">Shipping By: Pankaj Mahato</div>
+                    <div class="price">Rs <span>1000</span> /-</div>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <div
+                    class="image"
+                    style="
+                      background-image: url(./images/electronic/device/bluetooth-headphone.jpg);
+                    "
+                  >
+                    <!-- quantity -->
+                    <div class="qut">20</div>
+                  </div>
+                  <div class="details">
+                    <div class="name">Head Phone Sony High quality sounds</div>
+                    <div class="price">Rs <span>1000</span> /-</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="all-price-from-checkout">
+                <div class="shipping-fee">
+                  <div class="total">Shepping Fee</div>
+                  <div class="price">NRS: 24 /-</div>
+                </div>
+
+                <div class="final-price">
+                  <div class="total">Total</div>
+                  <div class="price">NRS: 70000 /-</div>
+                </div>
+              </div>
+
+              <div class="payment-option">
+                <div class="p-title">Payment Option</div>
+
+                <form action="">
+                  <div class="input-groups">
+                    <input
+                      type="text"
+                      name="payment"
+                      id="paymentOption"
+                      hidden
+                    />
+
+                    <div class="group-option active" id="cod">
+                      <div
+                        class="img"
+                        style="background-image: url(./images/icon/cod.jpeg)"
+                      >
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+
+                    <!-- <div class="group-option" id="Esewa">
+                      <div
+                        class="img"
+                        style="background-image: url(./images/icon/esewa.png)"
+                      >
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+
+                    <div class="group-option" id="Khalti">
+                      <div
+                        class="img"
+                        style="background-image: url(./images/icon/khalit.png)"
+                      >
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+
+                    <div class="group-option" id="paypalCard">
+                      <div
+                        class="img"
+                        style="background-image: url(./images/icon/paypal.png)"
+                      >
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+
+                    <div class="group-option" id="visaCard">
+                      <div
+                        class="img"
+                        style="background-image: url(./images/icon/visa.png)"
+                      >
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <button>Confirm Order</button>
+
+                  <h4 class="error">
+                    <i class="fas fa-exclamation-triangle"></i> Please set the
+                    location of your house
+                  </h4>
+                </form>
+              </div>
+            </div>
+
+            <div class="payment-form">
+              <div class="shipping-details">
+                <div class="name">Shipping Address</div>
+
+                <form action="">
+                  <input type="text" id="shippingAddress" hidden />
+
+                  <div class="shipping-list">
+                    <div class="details" id="address1">
+                      <i class="fas fa-check"></i>
+
+                      <div class="edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </div>
+
+                      <div class="delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </div>
+                      <h5 class="name">Pankaj Kushwaha</h5>
+                      <h5 class="locations">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Koteshowr, Kathmandu, 14400, Bagmati, Nepal
+                      </h5>
+
+                      <h5 class="mobile-number">
+                        <i class="fas fa-phone-alt"></i>+977-9845412777
+                      </h5>
+
+                      <h5 class="email">
+                        <i class="fas fa-envelope"></i> pankaj.mahat@gmail.com
+                      </h5>
+                    </div>
+
+                    <div class="details" id="address2">
+                      <i class="fas fa-check"></i>
+
+                      <div class="edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </div>
+
+                      <div class="delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </div>
+                      <h5 class="name">Pankaj Kushwaha</h5>
+                      <h5 class="locations">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Koteshowr, Kathmandu, 14400, Bagmati, Nepal
+                      </h5>
+
+                      <h5 class="mobile-number">
+                        <i class="fas fa-phone-alt"></i>+977-9845412777
+                      </h5>
+
+                      <h5 class="email">
+                        <i class="fas fa-envelope"></i> pankaj.mahat@gmail.com
+                      </h5>
+                    </div>
+
+                    <div class="details" id="address3">
+                      <i class="fas fa-check"></i>
+
+                      <div class="edit-btn">
+                        <i class="fas fa-edit"></i>
+                      </div>
+
+                      <div class="delete-btn">
+                        <i class="fas fa-trash"></i>
+                      </div>
+                      <h5 class="name">Pankaj Kushwaha</h5>
+                      <h5 class="locations">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Koteshowr, Kathmandu, 14400, Bagmati, Nepal
+                      </h5>
+
+                      <h5 class="mobile-number">
+                        <i class="fas fa-phone-alt"></i>+977-9845412777
+                      </h5>
+
+                      <h5 class="email">
+                        <i class="fas fa-envelope"></i> pankaj.mahat@gmail.com
+                      </h5>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <form action="">
+                <div class="name">Shipping Form</div>
+                <div class="form">
+                  <div class="groups slide-page">
+                    <div class="group">
+                      <label for="email">Email</label>
+                      <input type="email" name="" id="email" />
+                    </div>
+
+                    <div class="btns">
+                      <button class="firstNext next">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="fname">First Name</label>
+                      <input type="text" name="" id="fname" />
+                    </div>
+
+                    <div class="group">
+                      <label for="fname">Last Name</label>
+                      <input type="text" name="" id="fname" />
+                    </div>
+
+                    <div class="btns">
+                      <button class="prev prev-1">Prev</button>
+                      <button class="next-1">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="address">Address</label>
+                      <input type="text" name="" id="address" />
+                    </div>
+
+                    <div class="group">
+                      <label for="city">City</label>
+                      <input type="text" name="" id="city" />
+                    </div>
+
+                    <div class="btns">
+                      <button class="prev prev-2">Prev</button>
+                      <button class="next-2">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="fname">Country</label>
+                      <select name="" id="">
+                        <option value="">Nepal</option>
+                        <option value="">Germany</option>
+                        <option value="">India</option>
+                        <option value="">London</option>
+                      </select>
+                    </div>
+
+                    <div class="group">
+                      <label for="Postal">Postal Code</label>
+                      <input type="number" name="" id="Postal" />
+                    </div>
+
+                    <div class="btns">
+                      <button class="prev prev-3">Prev</button>
+                      <button class="next-3">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="phone">Mobile Number</label>
+                      <input type="number" name="" id="phone" />
+                    </div>
+
+                    <div class="btns">
+                      <button class="prev prev-4">Prev</button>
+                      <button class="next-4">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="Card">Card Number</label>
+                      <input type="number" name="" id="Card" />
+                    </div>
+
+                    <div class="group">
+                      <label for="CVC">CVC Number</label>
+                      <input type="number" name="" id="CVC" />
+                    </div>
+
+                    <div class="group">
+                      <label for="fname">Expires</label>
+                      <select name="" id="">
+                        <option value="">Jan</option>
+                        <option value="">Fev</option>
+                        <option value="">Mar</option>
+                        <option value="">Apr</option>
+                      </select>
+                    </div>
+
+                    <div class="group">
+                      <label for="fname"></label>
+                      <select name="" id="">
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                      </select>
+                    </div>
+
+                    <div class="btns">
+                      <button class="prev prev-5">Prev</button>
+                      <button class="submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="shipping-address">
+                  <h2>Shipping Address</h2>
+                  <div class="groups">
+                    <div class="group">
+                      <label for="name">First Name</label>
+                      <input type="text" id="name" required />
+                    </div>
+
+                    <div class="group">
+                      <label for="name">Last Name</label>
+                      <input type="text" id="name" required />
+                    </div>
+
+                    <div class="btns">
+                      <button>Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="name">Address</label>
+                      <input type="text" id="name" required />
+                    </div>
+
+                    <div class="group">
+                      <label for="name">City</label>
+                      <input type="text" id="name" required />
+                    </div>
+
+                    <div class="btns">
+                      <button>Prev</button>
+                      <button>Next</button>
+                    </div>
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="name">Country</label>
+                      <select name="" id="" required>
+                        <option value="">Nepal</option>
+                        <option value="">Germany</option>
+                        <option value="">London</option>
+                        <option value="">Brazil</option>
+                      </select>
+                    </div>
+
+                    <div class="group">
+                      <label for="name">Postal Code</label>
+                      <input type="number" id="name" required />
+                    </div>
+
+                    <div class="group">
+                      <label for="name">Mobile Number</label>
+                      <input type="number" id="name" required />
+                    </div>
+
+                    <div class="btns">
+                      <button>Prev</button>
+                      <button>Next</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payment-options">
+                  <h2>Payment Options</h2>
+
+                  <div class="card-list">
+                    <div class="card">
+                      <input type="radio" value="master" id="master-card" />
+                      <label for="master-card">
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(./images/icon/master.png);
+                          "
+                        ></div>
+                      </label>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" value="visa" id="visa-card" />
+                      <label for="visa-card">
+                        <div
+                          class="image"
+                          style="background-image: url(./images/icon/visa.png)"
+                        ></div>
+                      </label>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" value="paypal" id="paypal-card" />
+                      <label for="paypal-card">
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(./images/icon/paypal.png);
+                          "
+                        ></div>
+                      </label>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" value="cirrus" id="cirrus-card" />
+                      <label for="cirrus-card">
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(./images/icon/cirrus.png);
+                          "
+                        ></div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="group">
+                    <label for="name">Card Number</label>
+                    <input type="number" id="name" required />
+                  </div>
+
+                  <div class="group">
+                    <label for="name">CVC Number</label>
+                    <input type="number" id="name" required />
+                  </div>
+
+                  <div class="groups">
+                    <div class="group">
+                      <label for="name">Expires</label>
+                      <select name="" id="" required>
+                        <option value="">January</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">December</option>
+                      </select>
+                    </div>
+
+                    <div class="group">
+                      <select name="" id="" required>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-start -->
+    <section class="bg">
+      <div class="wrapper">
+        <footer>
+          <div class="subscribe">
+            <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <h5>Get the latest updates on new products and upcoming sales</h5>
+            <form action="">
+              <div class="group">
+                <input
+                  type="email"
+                  placeholder="enter your email address"
+                  required
+                />
+                <button class="send-btn">
+                  <img src="./images/icon/Send.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <ul>
+                <li class="heading">CATEGORIES</li>
+                <li>Appliances</li>
+                <li>Computers & Laptops</li>
+                <li>Cameras</li>
+                <li>Mobile Phones & Tablets</li>
+                <li>Televisions</li>
+                <li>Video Games & Systems</li>
+                <li>Weekly Deals</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">FURTHER INFO.</li>
+                <li>About us</li>
+                <li>Gift Certificates</li>
+                <li>Theme Styles</li>
+                <li>Contact us</li>
+                <li>Blog</li>
+                <li>Brands</li>
+                <li>Sitemap</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="heading">CUSTOMER SERVICE</li>
+                <li>Help & FAQs</li>
+                <li>Terms of Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Online Returns Policy</li>
+                <li>Rewards Program</li>
+                <li>Rebate Center</li>
+                <li>Partners</li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <div class="logo">
+                <h1>LOGO</h1>
+              </div>
+              <h4>
+                <i class="fas fa-map-marker-alt"></i> 685 Market Street San
+                Francisco, CA 94105, US
+              </h4>
+              <h4>
+                <i class="fas fa-phone-alt"></i> Call us at (415) 555-5555
+              </h4>
+              <h4><i class="fas fa-envelope"></i> Email: example@domain.com</h4>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- footer-end -->
+
+    <!-- mobile-nav-start -->
+    <div class="mobile-nav sticky-nav">
+      <div class="header">
+        <div class="nav-list">
+          <div class="icon side-nav-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <div class="icon search-pop-btn">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <a href="wishlist.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Heart.svg" alt="" />
+              </div>
+            </div>
+          </a>
+
+          <div class="shopping-bag">
+            <a href="checkout.html">
+              <div class="cart">
+                <img
+                  class="bag-image"
+                  src="./images/icon/shopping-bag-light.svg"
+                  alt="bag"
+                />
+                <div class="count">49</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="login-signup.html">
+            <div class="icon">
+              <div class="profile">
+                <img src="./images/icon/Profile.svg" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-nav-end -->
+
+    <!-- search-pop-start -->
+    <div class="search-pop">
+      <div class="inner">
+        <select name="" id="">
+          <option value="">All Categories</option>
+          <option value="">Electronic</option>
+          <option value="">Clothing</option>
+          <option value="">Kitchen</option>
+          <option value="">Shooes</option>
+          <option value="">Brands</option>
+        </select>
+
+        <div class="group">
+          <input type="search" class="input" placeholder="Search..." required />
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="search-close-btn">
+          <img src="./images/icon/close_big.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- search-pop-end -->
+
+    <!-- side-nav-start -->
+    <!-- side-nav-bg -->
+    <div class="side-nav-bg">
+      <img class="cursor-close" src="./images/icon/shadow-close.svg" alt="" />
+    </div>
+    <!-- side-nav -->
+    <div class="side-nav">
+      <div class="side-nav-logo">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <div class="nav-close-btn">
+          <img src="./images/icon/shadow-close.svg" alt="" />
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Shop <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <li>
+              <a href="clothing.html">Clothing</a>
+            </li>
+
+            <li>
+              <a href="electronic.html">Electronic</a>
+            </li>
+
+            <li>
+              <a href="sneakers.html">Shoes</a>
+            </li>
+
+            <li>
+              <a href="kitchen.html">Kitchen</a>
+            </li>
+
+            <li>
+              <a href="bags.html">Bags</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side_nav_dropdown">
+          <span>Brands <i class="fas fa-chevron-down rotation"></i></span>
+
+          <ul class="side_nav_drop">
+            <li>
+              <a href="#">Sony</a>
+            </li>
+
+            <li>
+              <a href="#">Adidas</a>
+            </li>
+
+            <li>
+              <a href="#">Acer</a>
+            </li>
+
+            <li>
+              <a href="#">Samsung</a>
+            </li>
+
+            <li>
+              <a href="#">Puma</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- side-nav-end -->
+
+    <!-- scroll-to-top-start -->
+    <div class="scroll-to-top">
+      <img src="./images/icon/chevron_up.svg" alt="" />
+    </div>
+    <!-- scroll-to-top-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/quantity.js"></script>
+    <script src="./js/wizard-form.js"></script>
+    <script src="./js/popup-form.js"></script>
+    <script src="./js/checkout.js"></script>
+  </body>
+</html>
